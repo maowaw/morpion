@@ -6,5 +6,5 @@ require_relative 'lib/board'
 require_relative 'lib/boardcase'
 require_relative 'lib/game'
 
-
+#Lancer une partie
 Game.new.turn

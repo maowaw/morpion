@@ -35,22 +35,12 @@ class Board
 
 	def play_turn (current_player)
 
-		#condition qui détermmine si le board est plein ou si qqun a gagné
-			#while board.find {|boardcase| boardcase == " "} == true && victory? == false
-
-	  #Tour du player 1
+	  #Tour du player 
 	  	puts " #{current_player.name}, c'est à toi ! Où veux-tu jouer? (Numéro de case, de 1 à 9)\n\n"
 	 
 		#allow the player to type their choice in
 			position = gets.chomp.to_i
 
-		#See if the boardcase of the ///position=input\\\ is available 
-			#until boardcase.content != " "
-				#puts " Sorry, tu vois bien que cette case est remplie!"
-			#end
-
-		#Put the symbol in the boardcase
-				#boardcase.content == player(x).symbol
 
 			@board = @board.each_index.map { |e| e+1 == position && @board[e] != "X" && @board[e] != "O" ? @board[e] = current_player.symbol : @board[e] }
 
