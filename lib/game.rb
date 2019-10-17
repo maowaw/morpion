@@ -72,6 +72,7 @@ class Game
 				input = gets.chomp
 
 				if input == "y" || input == "Y"
+					@@current_player = []
 					load 'app.rb'
 				else
 	      	break
