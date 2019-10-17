@@ -55,7 +55,7 @@ class Board
 			@board = @board.each_index.map { |e| e+1 == position && @board[e] != "X" && @board[e] != "O" ? @board[e] = current_player.symbol : @board[e] }
 
 		
-end
+	end
 
 	def victory?
     # On teste si les rangées ou diagonales contiennent des symboles identiques
